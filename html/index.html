@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Martim Palma , João Simões , Guilherme Nolasco , Inês Silva">
+    <meta  charset="UTF-8">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- Script -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="../js/locus.js"></script>
+</head>
+
+<body>
+
+<main class="container-fluid">
+    <!-- Formularios dos dados de astronauta -->
+    <section class=" vh-100 " id="forms">
+
+        <div id='layer5'></div>
+        <div id='layer6'></div>
+        <div id='layer7'></div>
+        <div id='layer8'></div>
+
+        <form class="row justify-content-center meio rounded-4 bg-forms " >
+
+            <h1 class="col-7 text-center text-white mt-3 mb-4 fs-5" >Dados do Astronauta</h1>
+
+            <!-- Dados da altura -->
+            <div class="col-7 mb-3  ">
+                <label for="altForm" class="form-label fs-6">Altura (cm)</label>
+                <input type="number" required  min="0" class="form-control input" id="altForm">
+                <div id ="errorAltura" class="text-center text-danger mb-3 fs-5"></div>
+            </div>
+
+            <!-- Dados do ano de nascimento -->
+            <div class="col-7 mb-3 ">
+                <label for="anoForm" class="form-label fs-6">Ano de Nascimento</label>
+                <input type="number" required  min="0" class="form-control input" id="anoForm">
+                <div id ="errorAno" class="text-center text-danger mb-3 fs-5"></div>
+            </div>
+
+            <!-- Dados do genero -->
+            <div class="col-7 mb-3 ">
+                <label for="generoForm" class="form-label fs-6" >Género</label>
+                <input type="text" required  class="form-control input" id="generoForm">
+                <div id ="errorGenero" class="text-center text-danger mb-3 fs-5"></div>
+            </div>
+
+            <!-- Botao para submeter os dados -->
+            <button type="button" id="buttonForm" class="col-6 btn button mb-3 mt-3 ">VEM EXPLORAR!</button>
+            <div id ="errorTodos" class="text-center text-danger mb-3 fs-6"></div>
+        </form>
+    </section>
+
+    <!-- primeira parte do scroll, direciona para o formulario e para o resto do website -->
+    <section class=" vh-100" id="universe1" >
+
+            <div id='layer1'></div>
+            <div id='layer2'></div>
+            <div id='layer3'></div>
+            <div id='layer4'></div>
+
+        <img  src="../images/o2 1.png" id="o2"/>
+        <img  src="../images/satelite_home_page.png" id="satelite" />
+        <img  src="../images/chegada1.png" id="moon" />
+        <img  src="../images/Comet.png" id="comet" />
+        <img  src="../images/astronauta_home_page.png" id="astronaut" />
+        <img  src="../images/Signal.png" id="signal"/>
+
+        <div class="text-center text-white w-100 meio">
+            <!--animação de texto -->
+            <h1 class="mb-5 gigante" id="introText"></h1>
+            <button type="button" class="btn btn-outline-light" id="buttonToForm">PERSONALIZAR</button>
+        </div>
+
+        <div class="text-center text-white fundo ">
+            <h6 class="mb-1">SCROOL DOWN</h6>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-down pulsate-bck" viewBox="0 0 16 16">
+                <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+            </svg>
+        </div>
+    </section>
+
+
+    <!-- segunda parte do scroll, timeline -->
+    <section  class="h-auto margin-bottom col-12" id="universe2">
+        <img src="../images/lines.png" id="lines"/>
+        <div class="timeline mt-5">
+
+            <div class="timeline__component rocket d-none" id="utilizador0">
+                <div id="data0utizador" class="timeline__date timeline__date--right"></div>
+                <img id="imagem0utizador" class="mt-5 ms-5" height="210" width="210"/>
+            </div>
+            <div class="timeline__middle rocket d-none" id="middle0">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg rocket d-none" id="utilizador02">
+                <h2 id="titulo0utizador" class="timeline__title"></h2>
+                <p id="texto0utizador" class="timeline__paragraph"></p>
+            </div>
+
+            <div class="timeline__component rocket">
+                <div id="data1" class="timeline__date timeline__date--right"></div>
+                <img id="imagem1" class="mt-5 ms-5" height="210" width="210"/>
+            </div>
+            <div class="timeline__middle rocket">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg rocket">
+                <h2 id="titulo1" class="timeline__title"></h2>
+                <p id="texto1" class="timeline__paragraph"></p>
+            </div>
+
+            <div class="timeline__component rocket d-none" id="utilizador1">
+                <div id="data1utizador" class="timeline__date timeline__date--right"></div>
+                <img id="imagem1utizador" class="mt-5 ms-5" height="210" width="210"/>
+            </div>
+            <div class="timeline__middle rocket d-none" id="middle1">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg rocket d-none" id="utilizador12">
+                <h2 id="titulo1utizador" class="timeline__title"></h2>
+                <p id="texto1utizador" class="timeline__paragraph"></p>
+            </div>
+
+            <div class="timeline__component timeline__component--bg rocket">
+                <h2 id="titulo2" class="timeline__title"></h2>
+                <p id="texto2" class="timeline__paragraph"></p>
+            </div>
+            <div class="timeline__middle rocket">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component rocket">
+                <div id="data2" class="timeline__date"></div>
+                <img id="imagem2" class="mt-5" height="230" width="315"/>
+            </div>
+
+            <div class="timeline__component rocket d-none" id="utilizador2">
+                <div id="data2utizador" class="timeline__date timeline__date--right"></div>
+                <img id="imagem2utizador" class="mt-5 ms-5" height="210" width="210"/>
+            </div>
+            <div class="timeline__middle rocket d-none" id="middle2">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg rocket d-none" id="utilizador22">
+                <h2 id="titulo2utizador" class="timeline__title"></h2>
+                <p id="texto2utizador" class="timeline__paragraph"></p>
+            </div>
+
+
+            <div class="timeline__component rocket">
+                <div id="data3" class="timeline__date timeline__date--right"></div>
+                <img id="imagem3" class="mt-5 ms-5" height="250" width="260"/>
+            </div>
+            <div class="timeline__middle rocket">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg rocket">
+                <h2 id="titulo3" class="timeline__title"></h2>
+                <p id="texto3" class="timeline__paragraph"></p>
+            </div>
+
+            <div class="timeline__component rocket d-none" id="utilizador3">
+                <div id="data3utizador" class="timeline__date timeline__date--right"></div>
+                <img id="imagem3utizador" class="mt-5 ms-5" height="210" width="210"/>
+            </div>
+            <div class="timeline__middle rocket d-none" id="middle3">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg rocket d-none" id="utilizador32">
+                <h2 id="titulo3utizador" class="timeline__title"></h2>
+                <p id="texto3utizador" class="timeline__paragraph"></p>
+            </div>
+
+            <div class="timeline__component timeline__component--bg rocket">
+                <h2 id="titulo4" class="timeline__title"></h2>
+                <p id="texto4" class="timeline__paragraph"></p>
+            </div>
+            <div class="timeline__middle rocket">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component rocket">
+                <div id="data4" class="timeline__date">data</div>
+                <img id="imagem4" class="mt-4 ms-4" height="213" width="255"/>
+            </div>
+
+            <div class="timeline__component rocket d-none" id="utilizador4">
+                <div id="data4utizador" class="timeline__date timeline__date--right"></div>
+                <img id="imagem4utizador" class="mt-5 ms-5" height="210" width="210"/>
+            </div>
+            <div class="timeline__middle rocket d-none" id="middle4">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg rocket d-none" id="utilizador42">
+                <h2 id="titulo4utizador" class="timeline__title"></h2>
+                <p id="texto4utizador" class="timeline__paragraph"></p>
+            </div>
+
+            <div class="timeline__component rocket">
+                <div id="data5" class="timeline__date timeline__date--right"></div>
+                <img id="imagem5" class="mt-3 ms-5" height="180" width="180"/>
+            </div>
+            <div class="timeline__middle rocket">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg rocket">
+                <h2 id="titulo5" class="timeline__title"></h2>
+                <p id="texto5" class="timeline__paragraph"></p>
+            </div>
+
+            <div class="timeline__component rocket d-none" id="utilizador5">
+                <div id="data5utizador" class="timeline__date timeline__date--right"></div>
+                <img id="imagem5utizador" class="mt-5 ms-5" height="210" width="210"/>
+            </div>
+            <div class="timeline__middle rocket d-none" id="middle5">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg rocket d-none" id="utilizador52">
+                <h2 id="titulo5utizador" class="timeline__title"></h2>
+                <p id="texto5utizador" class="timeline__paragraph"></p>
+            </div>
+
+            <div class="timeline__component timeline__component--bg rocket">
+                <h2 id="titulo6" class="timeline__title"></h2>
+                <p id="texto6" class="timeline__paragraph"></p>
+            </div>
+            <div class="timeline__middle rocket">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component rocket">
+                <div id="data6" class="timeline__date ">data</div>
+                <img id="imagem6" class="mt-5 ms-5" height="213" width="255"/>
+            </div>
+
+            <div class="timeline__component rocket d-none" id="utilizador6">
+                <div id="data6utizador" class="timeline__date timeline__date--right"></div>
+                <img id="imagem6utizador" class="mt-5 ms-5" height="210" width="210"/>
+            </div>
+            <div class="timeline__middle rocket d-none" id="middle6">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg rocket d-none" id="utilizador62">
+                <h2 id="titulo6utizador" class="timeline__title"></h2>
+                <p id="texto6utizador" class="timeline__paragraph"></p>
+            </div>
+
+            <div class="timeline__component rocket">
+                <div id="data7" class="timeline__date timeline__date--right "></div>
+                <img id="imagem7" class="mt-5 ms-4" height="250" width="260"/>
+            </div>
+            <div class="timeline__middle rocket">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg rocket">
+                <h2 id="titulo7" class="timeline__title"></h2>
+                <p id="texto7" class="timeline__paragraph"></p>
+            </div>
+
+            <div class="timeline__component rocket d-none" id="utilizador7">
+                <div id="data7utizador" class="timeline__date timeline__date--right"></div>
+                <img id="imagem7utizador" class="mt-5 ms-5" height="210" width="210"/>
+            </div>
+            <div class="timeline__middle rocket d-none" id="middle7">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg rocket d-none" id="utilizador72">
+                <h2 id="titulo7utizador" class="timeline__title"></h2>
+                <p id="texto7utizador" class="timeline__paragraph"></p>
+            </div>
+
+            <div class="timeline__component timeline__component--bg rocket">
+                <h2 id="titulo8" class="timeline__title"></h2>
+                <p id="texto8" class="timeline__paragraph"></p>
+            </div>
+            <div class="timeline__middle rocket">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component rocket">
+                <div id="data8" class="timeline__date">data</div>
+                <img id="imagem8" class="mt-4 ms-2" height="220" width="230"/>
+            </div>
+
+            <div class="timeline__component rocket d-none" id="utilizador8">
+                <div id="data8utizador" class="timeline__date timeline__date--right"></div>
+                <img id="imagem8utizador" class="mt-5 ms-5" height="210" width="210"/>
+            </div>
+            <div class="timeline__middle rocket d-none" id="middle8">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg rocket d-none" id="utilizador82">
+                <h2 id="titulo8utizador" class="timeline__title"></h2>
+                <p id="texto8utizador" class="timeline__paragraph"></p>
+            </div>
+
+            <div class="timeline__component rocket">
+                <div id="data9" class="timeline__date timeline__date--right"></div>
+                <img id="imagem9" class="mt-5 ms-5" height="223" width="223"/>
+            </div>
+            <div class="timeline__middle rocket">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg rocket">
+                <h2 id="titulo9" class="timeline__title"></h2>
+                <p id="texto9" class="timeline__paragraph"></p>
+            </div>
+
+            <div class="timeline__component rocket d-none" id="utilizador9">
+                <div id="data9utizador" class="timeline__date timeline__date--right"></div>
+                <img id="imagem9utizador" class="mt-5 ms-5" height="210" width="210"/>
+            </div>
+            <div class="timeline__middle rocket d-none" id="middle9">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg rocket d-none" id="utilizador92">
+                <h2 id="titulo9utizador" class="timeline__title"></h2>
+                <p id="texto9utizador" class="timeline__paragraph"></p>
+            </div>
+
+            <div class="timeline__component timeline__component--bottom timeline__component--bg rocket">
+                <h2 id="titulo10" class="timeline__title"></h2>
+                <p id="texto10" class="timeline__paragraph"></p>
+                <p class="timeline__paragraph">
+                </p>
+            </div>
+            <div class="timeline__middle rocket">
+                <div class="timeline__point"></div>
+                <div class="timeline__point timeline__point--bottom "></div>
+            </div>
+            <div class="timeline__component timeline__component--bottom rocket">
+                <div id="data10" class="timeline__date"></div>
+                <img id="imagem10" class="mt-3 ms-5" height="185" width="185"/>
+            </div>
+
+            <div class="timeline__component rocket d-none" id="utilizador10">
+                <div id="data10utizador" class="timeline__date timeline__date--right"></div>
+                <img id="imagem10utizador" class="mt-5 ms-5" height="210" width="210"/>
+            </div>
+            <div class="timeline__middle rocket d-none" id="middle10">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg rocket d-none" id="utilizador102">
+                <h2 id="titulo10utizador" class="timeline__title"></h2>
+                <p id="texto10utizador" class="timeline__paragraph"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="marquee">
+        <p id="randomText">No vasto universo, as estrelas são como as palavras num livro cósmico, cada uma conta sua própria história de luz e tempo.</p>
+    </div>
+
+
+    <!-- terceira parte do scroll, construcao do foguetao -->
+    <section class="h-auto mt-5" id="universe3">
+        <div class="row justify-content-evenly margin-bottom rocket ">
+            <img class="lado1"  src="../images/saturnV_img1.png" id="rocket1" width="99" height="200"/>
+
+            <h3 class="col-4 text-end text-white align-self-center fs-5 "><span class="fs-4">Capacidade tecnológica</span><br>
+                Os computadores utilizados no Saturno V nas missões Apollo eram menos poderosos que um simples smartphone moderno. No entanto, foram capazes de realizar cálculos complexos para guiar o foguetão até a Lua.</h3>
+        </div>
+
+        <div class="row justify-content-evenly margin-bottom rocket ">
+            <h3 class="col-4 text-start text-white align-self-center fs-5"><span class="fs-4">Velocidade do foguetão</span><br>
+                A velocidade necessária para escapar da gravidade da Terra, conhecida como velocidade de escape, para as missões Apollo era de aproximadamente 40.270 km/h (25.020 mph).
+            </h3>
+            <img class="lado " src="../images/saturnV_img2.png" id="rocket2" width="113" height="320"/>
+        </div>
+        <div class="row justify-content-evenly margin-bottom rocket ">
+            <img class="lado1" src="../images/saturnV_img3.png" id="rocket3" width="103" height="440"/>
+
+             <h3 class="col-4 text-end text-white align-self-center fs-5"><span class="fs-4">Arte no espaço</span><br>
+                 Durante a missão Apollo 11, os astronautas levaram consigo um pedaço de metal em formato de lua de queijo como uma brincadeira. Esse objeto foi deixado na Lua como uma peça de arte.
+             </h3>
+        </div>
+
+        <div class="row justify-content-evenly rocket ">
+            <h3 class="col-4 text-start text-white margin-top fs-5"><span class="fs-4">Sistema de Propulsão</span><br>
+                O foguete Saturn V, que levou o homem à Lua, usava cinco motores F-1 no primeiro estágio.
+                Esses motores geravam uma energia combinada de mais de 160 milhões de cavalos, o equivalente a aproximadamente 85 mil carros de Fórmula 1.
+            </h3>
+
+            <img class="lado me-3" src="../images/saturnV_img4.png" id="rocket4" width="109" height="560"/>
+        </div>
+
+    </section>
+
+    <!-- quarta parte do scroll, escala de tamanhos -->
+    <section  class="row justify-content-evenly align-items-end  h-auto  margin-bottom1 margin-top" id="universe4">
+
+        <div class="col-3">
+            <div class="text-center" id="img1Size">
+                <img src="../images/guy.png"/>
+            </div>
+
+            <div class="text-center text-white" id="text1Size">
+            </div>
+        </div>
+
+        <div class="col-5" >
+            <div class="instruction-div text-center rounded-5 m-0 " id="img2Size">
+                <p class="text-white fs-5 ">Por favor, clique na seta direita do teu teclado.</p>
+            </div>
+
+            <div class="text-center text-white" id="text2Size"></div>
+        </div>
+
+    </section>
+
+
+    <!-- quinta parte do scroll, escala de distancias -->
+    <section  class="h-auto margin-bottom " id="universe5">
+        <div  class="row justify-content-evenly" id="scroll_down_Container">
+            <div class="img" id="img1Scale">
+                <img src="../images/Earth.png" height="202" width="202"/>
+            </div>
+            <div class="img" id="rocketScale">
+                <img id="rocketship" src="../images/o4 1.png" height="123" width="156"/>
+            </div>
+            <div class="img" id="img3Scale">
+                <img id="imagem_chegada" src="../images/chegada1.png" height="214" width="213"/>
+            </div>
+        </div>
+        <div id="tempoViagem" class="text-center mb-5">3 a 4 Dias</div>
+        <div class="row justify-content-evenly" id="listPlanets">
+            <ul class="nav">
+                <li class="nav-item" id="luaButton">
+                    <button class="nav-link active" aria-current="page" href="#">Lua</button>
+                </li>
+                <li class="nav-item" id="marteButton">
+                    <button class="nav-link">Marte</button>
+                </li>
+                <li class="nav-item" id="mercurioButton">
+                    <button class="nav-link" >Mercúrio</button>
+                </li>
+                <li class="nav-item" id="venusButton">
+                    <button class="nav-link">Vénus</button>
+                </li>
+                <li class="nav-item" id="solButton">
+                    <button class="nav-link" >Sol</button>
+                </li>
+            </ul>
+        </div>
+        <div class="row justify-content-evenly" id="listRockets">
+            <ul class="nav">
+                <li class="nav-item" id="defaultButton">
+                    <button class="nav-link active" aria-current="page" href="#">Default</button>
+                </li>
+                <li class="nav-item" id="soyuzButton">
+                    <button class="nav-link">Soyuz</button>
+                </li>
+                <li class="nav-item" id="saturnButton">
+                    <button class="nav-link" >Saturn V</button>
+                </li>
+                <li class="nav-item" id="falconButton">
+                    <button class="nav-link">Falcon 9</button>
+                </li>
+                <li class="nav-item" id="angaraButton">
+                    <button class="nav-link" >Angara 5</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>

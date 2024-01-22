@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="Servidor Lab" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="Servidor Lab">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="d:/files/LM3" web="/LM3-060" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

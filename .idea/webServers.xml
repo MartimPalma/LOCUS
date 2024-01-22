@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c5e57361-371f-4a74-b00b-fb299adc51f4" name="Servidor Lab" url="http://labmm.clients.ua.pt/LM3">
+        <fileTransfer rootFolder="/LM3-060" host="labmm.clients.ua.pt" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

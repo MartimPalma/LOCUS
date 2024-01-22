@@ -1,0 +1,351 @@
+
+:root {
+    --body-background: #030218;
+    --vermelho-claro: #FF8C70;
+    --vermelho: #E85937;
+    --vermelho-escuro: #CF3F1D;
+    --tamanho-gigante: 86px;
+
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--body-background);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+span{
+    color: var(--vermelho-claro);
+}
+
+
+.instruction-div {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    color: white;
+
+}
+
+.bg-forms{
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(255, 255, 255, 0.59);
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--vermelho);
+    padding: 0 5rem;
+}
+
+.marquee p {
+    color: var(--vermelho-claro);
+    display: inline-block;
+    padding-left: 100%; /* Define a largura para o texto se mover */
+    animation: marquee 15s linear infinite; /* Define a anima��o */
+}
+
+@keyframes marquee {
+    0%   { transform: translateX(50%); } /* Come�a fora da �rea vis�vel */
+    100% { transform: translateX(-100%); } /* Move para fora do lado oposto */
+}
+
+
+.margin-bottom{
+    margin-bottom: 5rem;
+}
+.margin-bottom1{
+    margin-bottom: 15rem;
+}
+.margin-top{
+    margin-top: 5rem;
+}
+
+.pulsate-bck {
+    -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+    animation: pulsate-bck 0.5s ease-in-out infinite both;
+}
+
+@keyframes pulsate-bck {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes rotateAnimation {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(25deg); }
+    100% { transform: rotate(0deg); }
+}
+.lado{
+    animation: rotateAnimation 10s infinite;
+}
+@keyframes rotateAnimation1 {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(-25deg); }
+    100% { transform: rotate(0deg); }
+}
+.lado1{
+    animation: rotateAnimation1 10s infinite;
+}
+
+
+.rocket{
+    transform: translateX(600%) ;
+    transition: transform 1s ease-in-out;
+}
+.rocket:nth-of-type(even){
+    transform: translateX(-600%);
+}
+.rocket.show{
+   /* transform: translateX(0%); */
+    transform: translateX(0) ;
+}
+
+#tempoViagem{
+    color: var(--vermelho-claro);
+    font-size: 2rem;
+}
+#layer1, #layer2, #layer3, #layer4 , #layer5, #layer6, #layer7, #layer8 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#layer1, #layer5{
+    background-image: url("../images/Starts.png");
+    background-repeat: repeat-x;
+    z-index: -1;
+}
+
+#layer2, #layer6 {
+    background-image: url("../images/Starts.png");
+    background-repeat: repeat-x;
+    z-index: -2;
+}
+
+#layer3, #layer7 {
+    background-image: url("../images/Starts.png");
+    background-repeat: repeat-x;
+    z-index: -3;
+}
+
+#layer4, #layer8 {
+    background-image: url("../images/Starts.png");
+    background-repeat: repeat-x;
+    z-index: -4;
+}
+
+#lines {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -3;
+}
+
+
+  #universe2, #universe3, #universe4, #universe5{
+    background-image: url("../images/Starts.png");
+    z-index: -1;
+}
+
+
+.input{
+    background-color: #0D0E13;
+    border: 1px solid #E85937;
+}
+
+.button{
+    background-color: #CF3F1D;
+    color: #C4C4C4;
+
+}
+
+.button:hover{
+    color: #C4C4C4;
+    background-color: #E85937;
+
+
+}
+
+label {
+    color: #C4C4C4;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid #E85937;
+    background-color: #0D0E13;
+    color: #E85937;
+}
+
+.form-control{
+    color: #C4C4C4;
+
+}
+
+.margin{
+    margin-left: 100px;
+}
+
+.meio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.fundo{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gigante{
+    font-size: var(--tamanho-gigante);
+    letter-spacing: 1px;
+    line-height: 80px ;
+    color: var(--vermelho-claro);
+    font-weight: 600;
+}
+
+#o2{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+
+#moon{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    left: -3%;
+}
+#signal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+#satelite{
+    position: absolute;
+    top:58%;
+    left: 7%;
+    width: 400px;
+    height:220px ;
+}
+
+#comet{
+    position: absolute;
+    top: 60%;
+    left: 65%;
+}
+
+#astronaut{
+    position: absolute;
+    top: 10%;
+    left: 65%;
+}
+
+.bi-caret-down{
+    color: var(--vermelho-escuro);
+}
+
+
+
+
+
+/*classes timeline*/
+/* classe geral da timeline*/
+.timeline {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    color: #ffffff;
+}
+
+/*margem da caixa onde esta o titulo e o texto*/
+.timeline__component {
+    margin: 0 20px 20px 20px;
+
+}
+
+/* caracteristicas das caixas de texto*/
+.timeline__component--bg {
+    padding: 1.5em;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 5;
+}
+
+/* margem da ultima informacao da timeline */
+.timeline__component--bottom {
+    margin-bottom: 0;
+}
+
+/*linha central ao longo da timeline*/
+.timeline__middle {
+    position: relative;
+    border: 6px solid #CF3F1D;
+}
+
+/*bolas brancas ao longo de cada momento da timeline*/
+.timeline__point {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 22px;
+    height: 22px;
+    background: #FF8C70;
+    border-radius: 50%;
+}
+
+/* classe da bola branca final a encerrar a timeline*/
+.timeline__point--bottom {
+    top: initial;
+    bottom: 0;
+}
+
+/* alinha a data � direita*/
+.timeline__date--right {
+    text-align: right;
+}
+
+/*titulos da timeline*/
+.timeline__title {
+    margin: 0;
+}
+
+/*espacamento entre linhas de cada paragrafo*/
+.timeline__paragraph {
+    line-height: 1.5;
+}
+/*fim classes timeline*/
+
